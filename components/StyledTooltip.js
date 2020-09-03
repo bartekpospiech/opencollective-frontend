@@ -164,8 +164,8 @@ class StyledTooltip extends React.Component {
               <Box
                 ref={ref}
                 css={{ display: 'inline' }}
-                onMouseOver={this.handlePopperOpen}
-                onMouseOut={this.handlePopperClose}
+                onMouseEnter={this.handlePopperOpen}
+                onMouseLeave={this.handlePopperClose}
               >
                 {typeof this.props.children === 'function' ? (
                   this.props.children()
@@ -184,8 +184,8 @@ class StyledTooltip extends React.Component {
                 <StyledTooltipContainer
                   ref={ref}
                   style={style}
-                  onMouseOver={this.handledeepPopperOpen}
-                  onMouseOut={this.handledeepPopperClose}
+                  onMouseEnter={this.handledeepPopperOpen}
+                  onMouseLeave={this.handledeepPopperClose}
                 >
                   {typeof this.props.content === 'function' ? this.props.content() : this.props.content}
 

@@ -190,6 +190,8 @@ class NewContributionFlowPage extends React.Component {
     const { router, data = {}, intl, step } = this.props;
     const { account, tier } = data;
 
+    console.log(account);
+
     if (data.loading) {
       return (
         <Container py={[5, 6]}>
